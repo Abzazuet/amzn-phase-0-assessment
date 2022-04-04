@@ -20,11 +20,11 @@ function line(array) {
     console.log(stringToAdd);
 }
 function nowServing (array){
-    numberInLine = 0;
     if (array.length == 0){
         console.log('There is nobody waiting to be served!');
         return 0;
     }
+    numberInLine = 0;
     console.log(`Currently serving ${array[0].clientName}.`);
     array.shift();
     array = array.map(function (order){
